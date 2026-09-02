@@ -1,2 +1,2 @@
-# ai-company-template
-AI会社運用ループのパッケージ配布用テンプレート（仮名・準備中）
+# call-driven-company
+AI会社運用ループのパッケージ配布用テンプレート（準備中）
