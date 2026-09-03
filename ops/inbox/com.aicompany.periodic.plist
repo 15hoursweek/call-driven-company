@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.aicompany.periodic</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/USERNAME/workspace/docs/ops/inbox/run-periodic.sh</string>
+	</array>
+	<key>StartInterval</key>
+	<integer>300</integer>
+	<key>StandardOutPath</key>
+	<string>/Users/USERNAME/workspace/docs/ops/inbox/logs/launchd-periodic.log</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/USERNAME/workspace/docs/ops/inbox/logs/launchd-periodic.log</string>
+</dict>
+</plist>
