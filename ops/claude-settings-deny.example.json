@@ -1,0 +1,32 @@
+{
+  "_comment": "~/.claude/settings.json の permissions.deny に統合する雛形。無人の定期実行（--dangerously-skip-permissions）でも deny は最優先で効く。核は3系統: ローカル破壊(rm系)・正本リポジトリの削除(gh repo delete)・履歴破壊(force push)",
+  "permissions": {
+    "deny": [
+      "Bash(rm /*)",
+      "Bash(rm -r /*)",
+      "Bash(rm -f /*)",
+      "Bash(rm -rf /*)",
+      "Bash(rm -fr /*)",
+      "Bash(rm ~*)",
+      "Bash(rm -r ~*)",
+      "Bash(rm -f ~*)",
+      "Bash(rm -rf ~*)",
+      "Bash(rm -fr ~*)",
+      "Bash(rm $HOME*)",
+      "Bash(rm -r $HOME*)",
+      "Bash(rm -f $HOME*)",
+      "Bash(rm -rf $HOME*)",
+      "Bash(rm -fr $HOME*)",
+      "Bash(rm ..*)",
+      "Bash(rm -r ..*)",
+      "Bash(rm -f ..*)",
+      "Bash(rm -rf ..*)",
+      "Bash(rm -fr ..*)",
+      "Bash(sudo:*)",
+      "Bash(gh repo delete:*)",
+      "Bash(git push --force*)",
+      "Bash(git push -f *)",
+      "Bash(git push * --force*)"
+    ]
+  }
+}
