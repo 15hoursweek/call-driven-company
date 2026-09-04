@@ -4,7 +4,7 @@
 # claude -p のヘッドレスセッションを走らせる(どちらでもなければ静かに終了する)。
 # 多重起動はロックファイルで防止する(取得失敗は黙って終了し、次の周回に任せる)。
 set -u
-export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 cd "$HOME/workspace" || exit 1
 
 REPO_DIR="$HOME/workspace/docs"
