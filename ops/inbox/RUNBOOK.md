@@ -6,7 +6,7 @@
 
 ## 前提
 
-- 打ち合わせの決定はチャットが正本リポジトリのmdに直接反映する(`ai_todo/` へのTODOファイル作成・`IDEA_` ファイル作成・`user_todo/` のファイル作成/削除など)。冒頭のsyncで `docs/` に届く
+- 打ち合わせの決定はチャットがTODO・IDEA・user_todoのファイル操作として正本リポジトリに登録する(`ai_todo/` へのTODOファイル作成・`IDEA_` ファイル作成・`user_todo/` のファイル作成/削除。それ以外のドキュメント編集はチャットは行わず `ai_todo/` に積む)。冒頭のsyncで `docs/` に届く
 - 会社の理念・ルールは `docs/COMPANY.md`。事業構成は `CLAUDE.md` 参照
 - `docs/` は正本リポジトリ(GitHub `GITHUB_USERNAME/docs`)の作業コピーで、`docs/ops/sync-docs.sh`(自動コミット→pull --rebase→push)で同期する。**処理の最初と最後に必ず実行すること**
 - ファイルの移動・削除・編集はローカルの `docs/` で行う。最後の sync で GitHub に反映される
