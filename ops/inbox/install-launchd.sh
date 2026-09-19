@@ -1,8 +1,9 @@
 #!/bin/bash
-# launchd定義の適用スクリプト(冪等)。正本は docs/ops/inbox/com.aicompany.periodic.plist で、
-# 変更したらこのスクリプトを再実行すれば反映される
+# launchd定義の適用スクリプト(冪等)。正本は docs/ops/inbox/<ラベル>.plist で、
+# 変更したらこのスクリプトを再実行すれば反映される。
+# 引数でラベルを指定する(省略時は com.aicompany.periodic)。例: ./install-launchd.sh com.aicompany.periodic-weekly
 set -eu
-LABEL="com.aicompany.periodic"
+LABEL="${1:-com.aicompany.periodic}"
 SRC="$HOME/workspace/docs/ops/inbox/$LABEL.plist"
 DST="$HOME/Library/LaunchAgents/$LABEL.plist"
 UID_N=$(id -u)
